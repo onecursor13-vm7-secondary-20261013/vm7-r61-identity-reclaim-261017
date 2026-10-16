@@ -1,0 +1,9 @@
+pull_request_rules:
+  - name: VM7 R61 current author approval identity control
+    conditions:
+      - title = "[VM7-R61] identity reclaim probe 261017"
+    actions:
+      review:
+        type: APPROVE
+        message: "VM7_R61_BOT_ACCOUNT_IDENTITY_261017"
+        bot_account: "{{ author }}"
